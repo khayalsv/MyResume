@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Name of your web site">
+    <meta name="author" content="Marketify">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Cavani | Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/cavani/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="~/cavani/css/style.css" />
+
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader_line"></div>
+    </div>
+
+
+    <div class="cavani_tm_all_wrap" data-magic-cursor="show" data-enter="flipInX" data-exit="">
+        <div class="cavani_tm_left_border"></div>
+        <div class="cavani_tm_right_border"></div>
+
+        <div class="cavani_tm_topbar">
+            <div class="topbar_inner">
+                <div class="logo" data-type="image">
+                    <a class="image" href="#"><img src="~/cavani/img/logo/dark.png" alt="" /></a>
+                    <a class="text" href="#"><span>Cavani</span></a>
+                </div>
+                <div class="trigger">
+                    <div class="hamburger hamburger--slider">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cavani_tm_mobile_menu">
+            <div class="inner">
+                <div class="wrapper">
+                    <div class="avatar">
+                        <div class="image" data-img-url="/cavani/img/about/1.jpg"></div>
+                    </div>
+                    <div class="menu_list">
+                        <ul class="transition_link">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/facebook.svg" alt="" /></a></li>
+                            <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/twitter.svg" alt="" /></a></li>
+                            <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/instagram.svg" alt="" /></a></li>
+                            <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/dribbble.svg" alt="" /></a></li>
+                            <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/tik-tok.svg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright &copy; @DateTime.Now.Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cavani_tm_header">
+            <div class="logo" data-type="image">
+                <a class="image" href="#"><img src="~/cavani/img/logo/dark.png" alt="" /></a>
+                <a class="text" href="#"><span>Cavani</span></a>
+            </div>
+            <div class="menu">
+                <ul class="transition_link">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <span class="ccc"></span>
+            </div>
+        </div>
+
+
+        <div class="cavani_tm_mainpart">
+            <div class="author_image">
+                <div class="main" data-img-url="/cavani/img/about/4.jpg"></div>
+                <div class="particle_wrapper">
+                    <div id="particles-js"></div>
+                </div>
+            </div>
+            <div class="main_content">
+
+   @RenderBody()
+
+            </div>
+        </div>
+
+
+        <div class="cavani_tm_footer">
+            <div class="copyright">
+                <p>Copyright &copy; @DateTime.Now.Year</p>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/facebook.svg" alt="" /></a></li>
+                    <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/twitter.svg" alt="" /></a></li>
+                    <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/instagram.svg" alt="" /></a></li>
+                    <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/dribbble.svg" alt="" /></a></li>
+                    <li><a href="#"><img class="svg" src="~/cavani/img/svg/social/tik-tok.svg" alt="" /></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+
+    </div>
+
+
+    <script src="~/cavani/js/jquery.js"></script>
+    <script src="~/cavani/js/plugins.js"></script>
+    <script src="~/cavani/js/init.js"></script>
+    <script async defer src="~/cavani/https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&amp;callback=initMap"></script>
+
+</body>
+
+</html>

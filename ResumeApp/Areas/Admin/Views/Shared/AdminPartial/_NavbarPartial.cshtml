@@ -1,0 +1,174 @@
+﻿<nav class="navbar navbar-light navbar-vertical navbar-expand-xl" style="display: none;">
+    <script>
+                    var navbarStyle = localStorage.getItem("navbarStyle");
+                    if (navbarStyle && navbarStyle !== 'transparent') {
+                        document.querySelector('.navbar-vertical').classList.add(`navbar-${navbarStyle}`);
+                    }</script>
+    <div class="d-flex align-items-center">
+        <div class="toggle-icon-wrapper">
+            <button class="btn navbar-toggler-humburger-icon navbar-vertical-toggle" data-bs-toggle="tooltip" data-bs-placement="left" title="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+        </div><a class="navbar-brand" href="/">
+            <div class="d-flex align-items-center py-3"><span class="font-sans-serif">KS</span></div>
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+        <div class="navbar-vertical-content scrollbar">
+            <ul class="navbar-nav flex-column mb-3" id="navbarVerticalNav">
+                <li class="nav-item">
+                    <!-- label-->
+                    <div class="row navbar-vertical-label-wrapper mt-3 mb-2">
+                        <div class="col-auto navbar-vertical-label">Admin</div>
+                        <div class="col ps-0">
+                            <hr class="mb-0 navbar-vertical-divider" />
+                        </div>
+                    </div>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#home" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="home">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-address-card"></span></span><span class="nav-link-text ps-1">Home</span></div>
+                    </a>
+                    <ul class="nav collapse" id="home">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/home/index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/home/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#About" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="About">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-chart-bar"></span></span><span class="nav-link-text ps-1">About</span></div>
+                    </a>
+                    <ul class="nav collapse" id="About">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/About/index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/About/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#Education" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Education">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-comment-alt"></span></span><span class="nav-link-text ps-1">Education</span></div>
+                    </a>
+                    <ul class="nav collapse" id="Education">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Education/index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Education/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#Experience" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Experience">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-clipboard"></span></span><span class="nav-link-text ps-1">Experience</span></div>
+                    </a>
+                    <ul class="nav collapse" id="Experience">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Experience/index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Experience/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#Language" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Language">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-eye"></span></span><span class="nav-link-text ps-1">Language</span></div>
+                    </a>
+                    <ul class="nav collapse" id="Language">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Language/Index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Language/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#Portfolio" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Portfolio">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-file-archive"></span></span><span class="nav-link-text ps-1">Portfolio</span></div>
+                    </a>
+                    <ul class="nav collapse" id="Portfolio">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Portfolio/Index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Portfolio/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#Programming" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Programming">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-flag"></span></span><span class="nav-link-text ps-1">Programming</span></div>
+                    </a>
+                    <ul class="nav collapse" id="Programming">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Programming/Index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Programming/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- parent pages-->
+                    <!-- parent pages-->
+                    <a class="nav-link dropdown-indicator" href="#Services" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Counter">
+                        <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="far fa-hourglass"></span></span><span class="nav-link-text ps-1">Services</span></div>
+                    </a>
+                    <ul class="nav collapse" id="Services">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Services/Index" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">List</span></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/Services/create" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create</span></div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-xl" style="display: none;">
+    <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+    <a class="navbar-brand me-1 me-sm-3" href="/">
+        <div class="d-flex align-items-center"><img class="me-2" src="~/admin/assets/img/ks.jpg" alt="" width="40" /><span class="font-sans-serif">KS</span></div>
+    </a>
+
+
+</nav>

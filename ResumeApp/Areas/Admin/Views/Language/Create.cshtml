@@ -1,0 +1,26 @@
+﻿@model Language
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<form method="post">
+   
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+
+    <br>
+
+    <div class="form-group">
+        <label>Percent</label>
+        <input type="text" asp-for="Percent" class="form-control" />
+    </div>
+ 
+    <br />
+
+    <button class="btn btn-info">Save</button>
+</form>

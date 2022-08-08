@@ -1,0 +1,31 @@
+﻿@model List<Portfolio>
+
+<div class="cavani_tm_section" id="portfolio">
+    <div class="section_inner">
+        <div class="cavani_tm_portfolio">
+            <div class="cavani_tm_title">
+                <span>Portfolio</span>
+            </div>
+            <div class="portfolio_list">
+                <ul class="gallery_zoom">
+                    @foreach (var item in Model)
+                    {
+                        <li class="detail">
+                            <div class="list_inner">
+                                <div class="image">
+                                    <img src="~/cavani/img/thumbs/1-1.jpg" alt="" />
+                                    <div class="main" data-img-url="/cavani/img/portfolio/6.jpg"></div>
+                                    <div class="details">
+                                        <h3>Alice Moon</h3>
+                                        <span>Detail</span>
+                                    </div>
+                                    <a class="cavani_tm_full_link portfolio_popup" href="#"></a>
+                                </div>
+                            </div>
+                        </li>
+                                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

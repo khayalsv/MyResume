@@ -1,0 +1,20 @@
+﻿@model IList<Home>
+
+<div class="cavani_tm_section animated" id="home">
+    <div class="cavani_tm_home">
+        <div class="content">
+            @foreach (var item in Model)
+            {
+                <h3 class="name">@item.Name</h3>
+                <span class="line"></span>
+                <h3 class="job">
+                    <span class="cd-headline loading-bar">
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">@item.Title</b>
+                        </span>
+                    </span>
+                </h3>
+                }
+        </div>
+    </div>
+</div>

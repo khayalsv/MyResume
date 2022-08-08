@@ -1,0 +1,37 @@
+﻿@model List<Portfolio>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="table-responsive scrollbar">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Category</th>
+                <th scope="col">Link</th>
+                <th scope="col">Image</th>
+                <th class="text-end" scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.Project</td>
+                <td>@item.Category</td>
+                <td>@item.Link</td>
+                <td>@item.Image</td>
+                <td class="text-end">
+                    <div>
+                        <a href="/Admin/Home/Edit/@item.Id"><i class="fas fa-edit"></i></a>
+                        <a href="/Admin/Home/Delete/@item.Id" onclick="return confirm('Are you delete?')"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

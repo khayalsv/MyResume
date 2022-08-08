@@ -1,0 +1,136 @@
+﻿@model ALLVM
+
+
+<div class="cavani_tm_section" id="about">
+    <div class="section_inner">
+        <div class="cavani_tm_about">
+            <div class="biography">
+                <div class="cavani_tm_title">
+                    <span>Khayal Salimov</span>
+                </div>
+                <div class="wrapper">
+                    @foreach (var item in Model.Abouts)
+                    {
+        <div class="left">
+            <p>@item.Text</p>
+        </div>
+                        <div class="right">
+                            <ul>
+                                <li><span class="first">Name:</span><span class="second">@item.Name</span></li>
+                                <li><span class="first">Address:</span><span class="second">@item.Address</span></li>
+                                <li><span class="first">Mail:</span><span class="second">@item.Email</span></li>
+                                <li><span class="first">Phone:</span><span class="second">@item.Phone</span></li>
+                            </ul>
+                        </div>}
+                </div>
+            </div>
+
+
+            <div class="services">
+            <div class="wrapper">
+                <div class="service_list">
+                    <div class="cavani_tm_title">
+                        <span>Services</span>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            @foreach (var item in Model.Services)
+                            {
+                                <li>@item.Name</li>
+                             }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="skills">
+                <div class="wrapper">
+                    <div class="programming">
+                        <div class="cavani_tm_title">
+                            <span>Programming</span>
+                        </div>
+                        <div class="cavani_progress">
+                            @foreach (var item in Model.Programmings)
+                            {
+                                <div class="progress_inner" data-value="@item.Percent">
+                                    <span><span class="label">@item.Name</span><span class="number">@item.Percent%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                            }
+                        </div>
+                    </div>
+                    <div class="language">
+                        <div class="cavani_tm_title">
+                            <span>Language</span>
+                        </div>
+                        <div class="circular_progress_bar">
+                            <ul>
+                                @foreach (var item in Model.Languages)
+                                {
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="myCircle" data-value="0.@item.Percent"></div>
+                                            <div class="title"><span>@item.Name</span></div>
+                                        </div>
+                                    </li>
+                                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume">
+                <div class="wrapper">
+                    <div class="education">
+                        <div class="cavani_tm_title">
+                            <span>Education</span>
+                        </div>
+                        <div class="list">
+                            <div class="univ">
+                                <ul>
+                                    @foreach (var item in Model.Educations)
+                                    {
+                                        <li>
+                                            <div class="list_inner">
+                                                <div class="time">
+                                                    <span>@item.Year</span>
+                                                </div>
+                                                <div class="place">
+                                                    <h3>@item.Name</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <div class="cavani_tm_title">
+                            <span>Experience</span>
+                        </div>
+                        <div class="list">
+                            <div class="univ">
+                                <ul>
+                                    @foreach (var item in Model.Experiences)
+                                    {
+                                        <li>
+                                            <div class="list_inner">
+                                                <div class="time">
+                                                    <span>@item.Year</span>
+                                                </div>
+                                                <div class="place">
+                                                    <h3>@item.Name</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
